@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CJK Character Checker</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&family=Noto+Sans+TC&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="uk-container uk-margin-large-top">
+		<div class="uk-flex uk-flex-between uk-flex-middle">
+			<h2 class="uk-heading-divider"><span id="label_title">CJK文字表示比較ツール</span></h2>
+			<div>
+				<button class="uk-button uk-button-default" id="languageToggle">日本語 / English</button>
+			</div>
+		</div>
+
+		<div class="uk-margin">
+			<label class="uk-form-label" for="textInput"><span id="label_input_text">比較する文字列</span>:</label>
+			<div class="uk-form-controls">
+				<textarea class="uk-input uk-form-large" id="textInput" placeholder="例: 刃直海角骨入">刃直海角骨入</textarea>
+			</div>
+		</div>
+
+		<div class="uk-child-width-1-2@s uk-grid-match uk-grid-small uk-margin" uk-grid>
+			<div>
+				<div class="uk-card uk-card-default uk-card-body">
+					<h4 class="uk-card-title"><span id="label_input_title_ja">日本語</span> (ja)</h4>
+					<div id="ja" class="rendered ja">刃直海角骨入</div>
+				</div>
+			</div>
+			<div>
+				<div class="uk-card uk-card-default uk-card-body">
+					<h4 class="uk-card-title"><span id="label_input_title_zhcn">中国語・簡体</span> (zh-CN)</h4>
+					<div id="zh-CN" class="rendered zh-CN">刃直海角骨入</div>
+				</div>
+			</div>
+			<div>
+				<div class="uk-card uk-card-default uk-card-body">
+					<h4 class="uk-card-title"><span id="label_input_title_zhtw">中国語・繁体</span> (zh-TW)</h4>
+					<div id="zh-TW" class="rendered zh-TW">刃直海角骨入</div>
+				</div>
+			</div>
+			<div>
+				<div class="uk-card uk-card-default uk-card-body">
+					<h4 class="uk-card-title"><span id="label_input_title_ko">韓国語</span> (ko)</h4>
+					<div id="ko" class="rendered ko">刃直海角骨入</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="uk-margin">
+			<h3 class="uk-heading-divider"><span id="reference">As a reference</span></h3>
+			<ul>
+				<li><a href="https://heistak.github.io/your-code-displays-japanese-wrong/">Your Code Displays Japanese
+						Wrong</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
+	<script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+textarea {
+	min-height: 80px;
+}
+
+.rendered {
+	font-size: 2.2em;
+	padding: 12px 20px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	background: #f9f9f9;
+	min-height: 3em;
+}
+
+.ja {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.zh-CN {
+	font-family: 'Noto Sans SC', sans-serif;
+}
+
+.zh-TW {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.ko {
+	font-family: 'Noto Sans KR', sans-serif;
+}
